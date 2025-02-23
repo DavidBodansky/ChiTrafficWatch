@@ -1,6 +1,4 @@
-# ================================================================
-# Chicago Traffic Camera Analysis Project
-# ================================================================
+
 # Name: David Bodansky
 # Date: 2/9/25
 # Description:
@@ -14,9 +12,7 @@ from datetime import datetime
 import datetime
 
 ##################################################################  
-#
 # print_stats
-#
 # Given connection to database, executes various SQL queries to retrieve and output basic stats.
 def print_stats(dbConn):
     dbCursor = dbConn.cursor()
@@ -616,9 +612,7 @@ def commandError():
     print("Your choice --> Error, unknown command, try again...\n")
     print_menu()
 
-#
 # main
-#
 dbConn = sqlite3.connect('chicago-traffic-cameras.db')
 run = True
 
@@ -659,6 +653,3 @@ while run:
         commandx()
     else:
         commandError()
-#
-# done
-#
